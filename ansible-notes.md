@@ -1,60 +1,70 @@
-Ansible Notes 
-Reference: Ansible for DevOps - Server and configuration management forhumans by Jeff Geerling
+#Ansible Notes 
+*Reference: Ansible for DevOps - Server and configuration management for humans by Jeff Geerling*
 
-Commands
-ansible -i hosts.ini example -m ping -u [username]
-ansible -i hosts.ini example -a "free -h" -u [username]
+##Commands
+`ansible -i hosts.ini example -m ping -u [username]`
+`ansible -i hosts.ini example -a "free -h" -u [username]`
 
-To run a playbook
-ansible-playbook ./playbook/apt.yml -u user123 -i ./inventory/hosts
+####To run a playbook
+`ansible-playbook ./playbook/apt.yml -u user123 -i ./inventory/hosts`
 
-To run a playbook file called run.yml
-ansible-playbook run.yml -K --ask-vault-pass
--K will ask for the sudo password
---ask-vault-pass will ask for the vault password
+####To run a playbook file called run.yml
+`ansible-playbook run.yml -K --ask-vault-pass`
+>`-K`` will ask for the sudo password
 
-Note: for -K if enable passwordless sudo is enabled 
+>`--ask-vault-pass`` will ask for the vault password
 
-Don’t include the -K arg anymore only use --ask-vault-pass if you have an encrypted secret file for said playbook
+*Note:* for `-K`` if enable passwordless sudo is enabled 
 
-Pings all hosts within current dir
-ansible all -m ping
+Don’t include the -K arg anymore only use `--ask-vault-pass` if you have an encrypted secret file for said playbook
 
-
-
-Vagrant Commands
-Add a Rocky Linux 8.x 64-bit ‘box’ using the vagrant box add³⁶ command:
-vagrant box add geerlingguy/rockylinux8
-
-Create a default virtual server configuration using the box you just downloaded:
-vagrant init geerlingguy/rockylinux8
-
-Boot your Rocky Linux server: 
-vagrant up
-Fire Up a Vagrant box
-Vagrant up
+####Pings all hosts within current dir
+`ansible all -m ping`
 
 
-Variables
 
-You can put variables for each host in a folder titled host_vars and variables for groups in a folder named groups_vars
+##Vagrant Commands
+####Add a Rocky Linux 8.x 64-bit ‘box’ using the vagrant box add³⁶ command:
+`vagrant box add geerlingguy/rockylinux8`
+
+####Create a default virtual server configuration using the box you just downloaded:
+`vagrant init geerlingguy/rockylinux8`
+
+####Boot your Rocky Linux server: 
+`vagrant up`
+####Fire Up a Vagrant box
+`vagrant up`
+
+
+##Variables
+
+You can put variables for each host in a folder titled `host_vars` and variables for groups in a folder named `groups_vars`
 For instance, host_vars can have different SSH keys for each host
-Vars.yml
+
+#####vars.yml:
+```
+username: user123
+packages:
+  - neofetch
+  - htop
+  - speedtest-cli
+  - vim
+  - tmux
+```
 
 
-
-For encrypted variables, you need to create a file with ansible-vault
+For encrypted variables, you need to create a file with `ansible-vault`
 Navigate to your vars folder and create it there
-Ie: cd group_vars/all
-ansible-vault create secret.yml
+`cd group_vars/all`
+`ansible-vault create secret.yml`
 
 It’ll prompt for a password twice and then you can edit the file in vim and add your password
-secret-password=<password>
+`secret-password=<password>`
 
 You can also edit the secret file by running
-ansible-vault edit secret.yml
+`ansible-vault edit secret.yml`
 
-To call the variable created, we use {{ }} within the task
+To call the variable created, we use `{{ }}` within the task
 
 From:
 
