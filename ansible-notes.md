@@ -18,30 +18,30 @@
 
 Don’t include the -K arg anymore only use `--ask-vault-pass` if you have an encrypted secret file for said playbook
 
-####Pings all hosts within current dir
+#### Pings all hosts within current dir
 `ansible all -m ping`
 
 
 
-##Vagrant Commands
-####Add a Rocky Linux 8.x 64-bit ‘box’ using the vagrant box add³⁶ command:
+## Vagrant Commands
+#### Add a Rocky Linux 8.x 64-bit ‘box’ using the vagrant box add³⁶ command:
 `vagrant box add geerlingguy/rockylinux8`
 
-####Create a default virtual server configuration using the box you just downloaded:
+#### Create a default virtual server configuration using the box you just downloaded:
 `vagrant init geerlingguy/rockylinux8`
 
-####Boot your Rocky Linux server: 
+#### Boot your Rocky Linux server: 
 `vagrant up`
-####Fire Up a Vagrant box
+#### Fire Up a Vagrant box
 `vagrant up`
 
 
-##Variables
+## Variables
 
 You can put variables for each host in a folder titled `host_vars` and variables for groups in a folder named `groups_vars`
 For instance, host_vars can have different SSH keys for each host
 
-#####vars.yml:
+##### vars.yml:
 ```
 username: user123
 packages:
