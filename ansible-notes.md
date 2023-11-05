@@ -1,14 +1,14 @@
-#Ansible Notes 
+# Ansible Notes 
 *Reference: Ansible for DevOps - Server and configuration management for humans by Jeff Geerling*
 
-##Commands
+## Commands
 `ansible -i hosts.ini example -m ping -u [username]`
 `ansible -i hosts.ini example -a "free -h" -u [username]`
 
-####To run a playbook
+#### To run a playbook
 `ansible-playbook ./playbook/apt.yml -u user123 -i ./inventory/hosts`
 
-####To run a playbook file called run.yml
+#### To run a playbook file called run.yml
 `ansible-playbook run.yml -K --ask-vault-pass`
 >`-K`` will ask for the sudo password
 
