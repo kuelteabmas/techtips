@@ -13,4 +13,5 @@ Print out the deployment in question
 Print out the service in question 
 `kubectl describe service nginx` 
 
-
+Delete a deployment
+`kubectl delete deployment deployment_name`
