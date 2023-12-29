@@ -2,6 +2,7 @@
 
 *Monday, October 31st, 2023* by **devP**
 
+#### Generate a SSH Key Pair
 Run the command for generating a SSH keypair of encryption type ED25519. Read more about the ED25519 [here](https://ed25519.cr.yp.to/).
 `ssh-keygen -o -a 100 -t ed25519 -f ~/.ssh/file_name -C "your_description_here"`
 
@@ -26,3 +27,10 @@ Specifies the type of key to create
 **-C** for comment
 > Provides a new comment
 
+
+___
+
+#### Copy a specific public SSH key to a given server/IP 
+`ssh-copy-id -i ~/.ssh/id_rsa.pub tom@server.demo.com`
+
+___
