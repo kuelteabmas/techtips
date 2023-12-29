@@ -18,6 +18,9 @@
 
 Don’t include the -K arg anymore only use `--ask-vault-pass` if you have an encrypted secret file for said playbook
 
+##### Note: Or simply run to run a playbook (run.yml) with SSH key already copied to host
+`ansible-playbook --ask-vault-pass run.yml`
+
 #### Pings all hosts within current dir
 `ansible all -m ping`
 
