@@ -21,10 +21,21 @@ Don’t include the -K arg anymore only use `--ask-vault-pass` if you have an en
 ##### Note: Or simply run to run a playbook (run.yml) with SSH key already copied to host
 `ansible-playbook --ask-vault-pass run.yml`
 
+___
+#### To run a playbook (run.yml) with SSH key already copied to host and only to a specific host (server_abc) 
+`ansible-playbook --ask-vault-pass run.yml -i server_abc,`
+> *Note: the comma at the end of the hostname is required*
+
+###### Given hosts file:
+
+`[group_main]
+server_abc`
+
+___
 #### Pings all hosts within current dir
 `ansible all -m ping`
 
-
+___
 
 ## Vagrant Commands
 #### Add a Rocky Linux 8.x 64-bit ‘box’ using the vagrant box add³⁶ command:
@@ -38,6 +49,7 @@ Don’t include the -K arg anymore only use `--ask-vault-pass` if you have an en
 #### Fire Up a Vagrant box
 `vagrant up`
 
+___ 
 
 ## Variables
 
@@ -84,7 +96,9 @@ ansible-playbook run.yml -K --ask-vault-pass
 -K will ask for the sudo password
 --ask-vault-pass will ask for the vault password
 
-Roles
+___
+
+## Roles
 Roles are basically mini playbooks
 They can have their own variables, tasks, and handlers.
 At the same time, they also inherit the playbook variables, so they’re
@@ -93,8 +107,9 @@ not completely isolated from the rest of the playbook.
 Folder Structure for roles
 [project] > Roles > System > Tasks 
 
+___ 
 
-Filters
+## Filters
 Filters in Ansible are similar to pipes in bash, and are used to
 transform variables.
 There are filters that can turn your variable into lowercase
@@ -107,8 +122,9 @@ Ie: # hashing password with password hash filter sha512
  user:
    name: "{{ username }}"
    password: "{{ password | password_hash('sha512') }}"
+___ 
 
-Loops
+## Loops
 
 Example of a simple loop: 
 - name: Ensure all necessary groups are created
@@ -118,9 +134,28 @@ Example of a simple loop:
    - docker
    - samba
    - "{{ username }}"
+___
 
+## Conditionals
 
-Ansible-Galaxy
+You can use conditionals in various places including:
+
+#### 1. Tasks 
+Add `when` within the task
+
+example: `tasks/install.yml`
+```
+- name: Copy the compose file if host is server_abc
+  template: 
+    src: templates/compose-server_abc.yml
+    dest: "{{ docker_compose_dir }}/compose.yaml"
+  when: "'server_abc' in inventory_hostname"
+```
+
+When you run the command `ansible-playbook -i server_abc, run.yml`, the role will only run if the hostname `server_abc` is invoked
+___
+
+## Ansible-Galaxy
 
 You’ll need to create a file in your main repo called `requirements.yml` and add the roles from Ansible Galaxy site in order to use them
 
@@ -130,7 +165,7 @@ roles:
 - name: geerlingguy.docker
 
 Then run the following command to install them:
-`ansible-galaxy install -r requirements.yml
+`ansible-galaxy install -r requirements.yml`
 
 Terminal Output
 Starting galaxy role install process
