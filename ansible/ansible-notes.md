@@ -176,3 +176,31 @@ Starting galaxy role install process
 
 Note
 You will need to add the roles to run.yml file
+
+
+____
+
+## Docker Compose files within Ansible
+
+#### If Conditionals
+
+
+**compose.yml** `roles/containers/templates/compose-mediasvr.yml`
+```
+services: 
+# {% if "plex" in services_svr %}
+  plex:
+    image: lscr.io/linuxserver/plex:latest
+    container_name: plex
+      - /path/to/tv:/tv
+    restart: unless-stopped
+# {% endif %}
+```
+
+**vars.yml** 
+```
+services_svr:
+  - plex
+```
+
+___
