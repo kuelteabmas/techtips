@@ -32,3 +32,30 @@ ___
 `ssh-keygen -R hostname`
 
 ___
+
+### Scenario
+
+>W: Target Packages (pve-no-subscription/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list.d/pve-community.list:1 and /etc/apt/sources.list.d/pve-no-subscription.list:1
+
+***Source**: https://askubuntu.com/questions/760896/how-can-i-fix-apt-error-w-target-packages-is-configured-multiple-times#762815* 
+
+
+There's is a Python script to automate this task. You can find the most recent version here.
+Installation:
+
+1. Install the prerequisites:
+`sudo apt install python3-apt`
+
+1. Download the PYZ bundle (aptsources-cleanup.pyz) from the latest release.
+`wget https://github.com/davidfoerster/aptsources-cleanup/releases/download/<version>/aptsources-cleanup.pyz`
+
+1. Mark the PYZ bundle as executable:
+`chmod a+x aptsources-cleanup.pyz`
+
+**Usage:**
+
+From the download location of the PYZ bundle (see step 2 above) run:
+
+`sudo ./aptsources-cleanup.pyz`
+
+Follow the instructions appearing on the screen.
