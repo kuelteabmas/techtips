@@ -25,6 +25,19 @@ List all secrets
 `kubectl get secrets`
 >`--namespace` | `kubectl get secrets --namespace traefik`
 
+List all challenges (Let's Encrypt ACME Certificates)
+`kubectl get challenges`
+
+
+____
+
+### Logs
+
+View logs continuously (tailing)
+`kubectl logs -n namespace_name -f pod_name`
+`kubectl logs -n cert-manager -f cert-manager-79497589cf-kk2mb`
+
+___
 
 ### Describe
 Print out the deployment in question 
@@ -36,16 +49,36 @@ Print out the service in question
 Delete a deployment
 `kubectl delete deployment deployment_name`
 
+___
+
+### Applying files
 
 Apply a file
 `kubectl apply -f example.yml` 
 
+Apply a folder containing .yaml files
+
+example: 
+***nginx folder contains 3 files:***
+
+```
+nginx
+   ├── deployment.yaml
+   ├── ingress.yaml
+   └── service.yaml
+```
+
+`kubectl apply -f nginx`
+
+___
 
 ### Namespaces
 
 Create a namespace
 `kubectl create namespace namespace_name`
 
+
+___
 
 ### Definitions
 
@@ -61,3 +94,5 @@ example: `https://github.com/cert-manager/cert-manager/releases/download/v1.13.3
 
 Response:
 `No resources found in default namespace.`
+
+___
