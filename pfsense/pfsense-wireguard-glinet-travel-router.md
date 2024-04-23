@@ -16,6 +16,9 @@ for DDNS with duckdns.org:
 https://www.youtube.com/watch?v=IvGjWndvTk0&t=680s
 https://geekistheway.com/2020/06/27/setting-up-duckdns-ddns-on-your-pfsense/
 
+for setting up Wireguard Client config via Linux terminal:
+https://green.cloud/docs/how-to-install-and-configure-wireguard-client-on-ubuntu-2204/
+
 ## OpenVPN 
 for openvpn tutorial: https://alexklibisz.com/2024/02/11/gl-inet-opal-pfsense-openvpn
 
