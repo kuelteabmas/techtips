@@ -1,8 +1,7 @@
-# Secure SSH Keygen
+# How to resize Proxmox Local and Local-LVM partitions (boot drives and alt hdds)
 
 *Tuesday, January 2nd, 2024* by **devP**
 
-# How to resize Proxmox VM disk and LVM partitions
 
 1. Install parted 
 `apt install parted`
