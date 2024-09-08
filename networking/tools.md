@@ -14,3 +14,10 @@ Connected to 154.159.83.91.
 Escape character is '^]'.
 
 ```
+
+## ethtool
+> **ethtool** is the primary means in Linux kernel-based operating systems for displaying and modifying the parameters of network interface controllers and their associated device driver software from application programs running in userspace.
+
+##### Identify a port
+`ethtool -p enps10 15`
+`ethtool --idetify enps10`
