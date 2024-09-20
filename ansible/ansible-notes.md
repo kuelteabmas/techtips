@@ -5,6 +5,11 @@
 `ansible -i hosts.ini example -m ping -u [username]`
 `ansible -i hosts.ini example -a "free -h" -u [username]`
 
+#### Verbose logs
+> `-vvvv` `level 4`
+
+`ansible-playbook run.yml -vvvv` 
+
 #### To run a playbook
 `ansible-playbook ./playbook/apt.yml -u user123 -i ./inventory/hosts`
 
