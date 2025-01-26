@@ -14,8 +14,8 @@ Create a hidden credentials file
 Add your credentials for share
 
 ```
-username:foo
-password:bar123
+username=foo
+password=bar123
 domain=domain
 ```
 
@@ -28,7 +28,6 @@ Add to `/etc/fstab` the following:
 # <file system>             <dir>          <type> <options>                                                   <dump>  <pass>
 //WIN_SHARE_IP/share_name  /mnt/win_share  cifs  credentials=~/.smbcreds,file_mode=0755,dir_mode=0755 0       0
 ```
-
 Mount drives
 `sudo mount -a`
 
