@@ -16,5 +16,8 @@ For any new postgresql install, you can start here with a new user.
 `CREATE ROLE <user> WITH PASSWORD 'very_secure_password';`
 
 * Add role to user
-ie: Add LOGIN role to user 
+  * ie: Add **LOGIN** role to user 
 `ALTER ROLE <user> LOGIN;`
+
+  * ie: Add **SUPERUSER** role to user 
+`ALTER ROLE <user> SUPERUSER;`
