@@ -16,3 +16,12 @@
     build – changes that affect the build system or external dependencies
     revert – reverts a previous commit
 
+## Merge Feature to Main without 'Merge Branch' commit
+
+```
+git checkout feature_branch
+git pull --rebase origin main
+
+git checkout main
+git pull --rebase origin feature_branch
+```
