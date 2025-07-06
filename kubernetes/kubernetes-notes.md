@@ -63,6 +63,9 @@ ___
 Delete a deployment
 `kubectl delete deployment deployment_name`
 
+Deleted all Succeeded and Completed pods in all namespaces 
+`kubectl delete pods --field-selector status.phase=Succeeded --all-namespaces`
+
 Deleted all Failed and Evicted pods in all namespaces 
 `kubectl delete pods --field-selector status.phase=Failed --all-namespaces`
 
