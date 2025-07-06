@@ -2,6 +2,13 @@
 
 # Commands
 
+### Restart
+
+Restart a deployment
+`kubectl rollout restart deployment/nginx`
+
+____
+
 ### List
 List all nodes
 `kubectl get nodes`
@@ -55,6 +62,9 @@ ___
 
 Delete a deployment
 `kubectl delete deployment deployment_name`
+
+Deleted all Failed and Evicted pods in all namespaces 
+`kubectl delete pods --field-selector status.phase=Failed --all-namespaces`
 
 ___
 
