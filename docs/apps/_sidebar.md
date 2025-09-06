@@ -1,2 +1,2 @@
-* [JellyFin Notes](./jellyfin_notes)
-* [PiHole](./pihole.md)
+* [JellyFin Notes](./apps/jellyfin_notes)
+* [PiHole](apps/pihole.md)
