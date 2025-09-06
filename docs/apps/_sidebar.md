@@ -1,4 +1,4 @@
 - Sidebar
 
-  - [JellyFin Notes](jellyfin_notes.md)
+  - [JellyFin Notes](/)
   - [PiHole](pihole.md)
