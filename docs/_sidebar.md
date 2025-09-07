@@ -47,4 +47,5 @@
   * [Jenkins](software-engineering/jenkins/README)
     * [Jenkins Notes](software-engineering/jenkins/jenkins_notes)  
     * [New Jenkins Instance Set Up](software-engineering/jenkins/new_jenkins_instance_set_up)
-* [TrueNas](truenas/README)  * [Rsync from Truenas to another system](truenas/rsync-from-truenas-to-another-system)
+* [TrueNas](truenas/README)  
+  * [Rsync from Truenas to another system](truenas/rsync-from-truenas-to-another-system)
