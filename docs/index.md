@@ -36,11 +36,11 @@ Tech Tips and Guides - Dev Ops, Home Labbing, Sofware Development
 * [PFSsense/Wireguard Glinet Travel Router Notes](pfsense/pfsense-wireguard-glinet-travel-router)
 * [Unable to Retrieve Package Information](pfsense/unable-to-retrieve-package-information.md)
 ### Proxmox
-* [adding-second-drive-vg](proxmox/adding-second-drive-vg)
-* [delete_node_from_proxmox_cluster](proxmox/delete_node_from_proxmox_cluster)
-* [how-to-resize-proxmox-local-lvm-disk](proxmox/how-to-resize-proxmox-local-lvm-disk)
-* [how-to-resize-proxmox-vm-disk-space](proxmox/how-to-resize-proxmox-vm-disk-space)
-* [pci_passthrough_intel_gpu](proxmox/pci_passthrough_intel_gpu)
+  * [Adding Second Drive in a Volume Group](proxmox/adding-second-drive-vg)
+  * [Delete Node from Proxmox Cluster](proxmox/delete_node_from_proxmox_cluster)
+  * [How to Resize Proxmox local-lvm Disk](proxmox/how-to-resize-proxmox-local-lvm-disk)
+  * [How to Resize Proxmox VM Disk Space](proxmox/how-to-resize-proxmox-vm-disk-space)
+  * [PCI Passthough - Intel GPU](proxmox/pci_passthrough_intel_gpu)
 ### Software Engineering
 * [Git](software-engineering/git/README)
   * [Best Practices](software-engineering/git/best_practices)
