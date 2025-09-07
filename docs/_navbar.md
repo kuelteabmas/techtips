@@ -2,6 +2,7 @@
 * [Databases](databases/README)
 * [Docker](docker/README)
 * [IaC](iac/README)
+* [Hardware](hardware/README)
 * [Kubernetes](kubernetes/README)
 * [Linux](linux/README)
 * [Miscelleanous Notes](misc/README)
