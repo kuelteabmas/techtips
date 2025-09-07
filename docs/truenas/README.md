@@ -1,0 +1,4 @@
+# TrueNas
+
+Notes for:
+* [Rsync from Truenas to another system](truenas/rsync-from-truenas-to-another-system)

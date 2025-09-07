@@ -1,0 +1,12 @@
+# Software Engineering
+
+Notes for:
+* [Git](software-engineering/git/README)
+    * [Best Practices](git/best_practices)
+    * [Git Commands](git/git-commands)
+* [Java](software-engineering/java/README)
+    * [Java Notes](java/java_notes)  
+    * [Sonarlint Rules](java/sonarlint_rules)
+* [Jenkins](software-engineering/jenkins/README)
+    * [Jenkins Notes](jenkins/jenkins_notes)  
+    * [New Jenkins Instance Set Up](jenkins/new_jenkins_instance_set_up)
