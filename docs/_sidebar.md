@@ -1,2 +1,4 @@
-* [Apps](/apps/README.md)
-* [Databases](/databases)
+* [Apps](apps/README)
+* [Databases](databases/README)
+* [Docker](docker/README)
+* [Hardware](hardware/README)
