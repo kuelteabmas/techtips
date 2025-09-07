@@ -28,8 +28,8 @@ Miscelleanous Notes
 Networking
 * [Tools](networking/tools)
 PFSense
-* [PFSsense/Wireguard Glinet Travel Router Notes](pfsense/pfsense-wireguard-glinet-travel-router)
-* [Unable to Retrieve Package Information](pfsense/unable-to-retrieve-package-information.md)
+- [PFSsense/Wireguard Glinet Travel Router Notes](pfsense/pfsense-wireguard-glinet-travel-router)
+- [Unable to Retrieve Package Information](pfsense/unable-to-retrieve-package-information.md)
 Proxmox
 * [adding-second-drive-vg](proxmox/adding-second-drive-vg)
 * [delete_node_from_proxmox_cluster](proxmox/delete_node_from_proxmox_cluster)
@@ -38,13 +38,13 @@ Proxmox
 * [pci_passthrough_intel_gpu](proxmox/pci_passthrough_intel_gpu)
 Software Engineering
 * Git
-  * [Best Practices](git/best_practices)
-  * [Git Commands](git/git-commands)
+  * [Best Practices](software-engineering/git/best_practices)
+  * [Git Commands](software-engineering/git/git-commands)
 * Java
-  * [Java Notes](java/java_notes)  
-  * [Sonarlint Rules](java/sonarlint_rules)
+  * [Java Notes](software-engineering/java/java_notes)  
+  * [Sonarlint Rules](software-engineering/java/sonarlint_rules)
 * Jenkins
-  * [Jenkins Notes](jenkins/jenkins_notes)  
-  * [New Jenkins Instance Set Up](jenkins/new_jenkins_instance_set_up)
+  * [Jenkins Notes](software-engineering/jenkins/jenkins_notes)  
+  * [New Jenkins Instance Set Up](software-engineering/jenkins/new_jenkins_instance_set_up)
 TrueNas
 * [Rsync from Truenas to another system](truenas/rsync-from-truenas-to-another-system)
