@@ -4,7 +4,7 @@ Apps
 Databases
 * [PostgreSQL](databases/postgresql)
 Docker
-* [Docker Commands](docker/docker_commands)
+* [Docker Commands](docker/docker-commands)
 IaC
 * Terraform
   * [Terraform Notes](iac/terraform/terraform-notes)
