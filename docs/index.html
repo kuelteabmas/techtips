@@ -99,9 +99,6 @@
     // Enter the URL of your own GitHub Repository in between the two quotes below
     var gitLinkRepoURL = 'https://github.com/kuelteabmas/techtips';
 
-    // Customize the text for your Edit this Page on GitHub link between the two quotes below
-    var editThisPageLinkText = 'Edit this Page';
-
     // Set standalone to true to permanently hide the Sidebar and Navbar
     var standalone = false;
 
@@ -307,14 +304,6 @@
             } else {
               url = gitLinkRepoURL + '/blob/main/docs/' + vm.route.file
             }
-            var editHtml = '[:memo:' + editThisPageLinkText + '](' + url + ' ":class=align-items-vertically")\n'
-
-            if ((!(getURLParameterByName('hidegitlink'))) && (!!gitLinkRepoURL)) {
-              return editHtml + '\n' + html
-            } else {
-              return html
-            }
-
           });
 
           // Invoked on each page load after new HTML has been appended to the DOM
