@@ -1,10 +1,10 @@
-* Apps
-  * [JellyFin Notes](apps/jellyfin_notes)
-  * [PiHole](apps/pihole.md)
-* Databases
-  * [PostgreSQL](databases/postgresql)
-* Docker
-  * [Docker Commands](docker/docker_commands)
+Apps
+* [JellyFin Notes](apps/jellyfin_notes)
+* [PiHole](apps/pihole.md)
+Databases
+* [PostgreSQL](databases/postgresql)
+Docker
+* [Docker Commands](docker/docker_commands)
 * IaC
   * Terraform
     * [Terraform Notes](iac/terraform/terraform-notes)
