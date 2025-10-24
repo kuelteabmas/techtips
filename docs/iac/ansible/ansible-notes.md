@@ -33,7 +33,7 @@ ___
 
 
 #### Note: To run a playbook (run.yml) without being prompted any SSH key or password
-Follow steps in [pass_utility.md]() to step `pass`
+Follow steps in [pass_utility.md](https://kuelteabmas.github.io/techtips/#/linux/pass_utility) to step `pass`
 
 Then create a script that retrieves the password from pass:
 ```

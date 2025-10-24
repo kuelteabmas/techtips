@@ -17,6 +17,7 @@ In order to resolve this error, you need to explicitly specify to use the SSH ke
 
 ``` 
 Host 10.85.194.165
+  Hostname ubuntu_server
   IdentityFile ~/.ssh/id_edcsa
   IdentitiesOnly yes
   Port 22
