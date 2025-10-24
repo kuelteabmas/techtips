@@ -31,6 +31,33 @@ ___
 `ansible-playbook --ask-vault-pass run.yml -i server_abc,`
 > *Note: the comma at the end of the hostname is required*
 
+
+#### Note: To run a playbook (run.yml) without being prompted any SSH key or password
+Follow steps in [pass_utility.md]() to step `pass`
+
+Then create a script that retrieves the password from pass:
+```
+#!/bin/bash
+# .vault_password.sh
+pass show "Ansible Vault Password"
+```
+
+Make it executable:
+`chmod +x .vault_password.sh`
+
+Then run your playbook with:
+`ansible-playbook run.yml --vault-password-file=./.vault_password.sh`
+
+Or better yet, add it to your `ansible.cfg`:
+```
+[defaults]
+vault_password_file = ./.vault_password.sh
+```
+
+Then just run:
+`ansible-playbook run.yml`
+
+
 ###### Given hosts file:
 
 `[group_main]
