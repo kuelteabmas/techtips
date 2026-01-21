@@ -4,3 +4,4 @@
 * [Setting Up pass utility](linux/pass_utility)
 * [Secure SSH Keygen](linux/secure-ssh-keygen)
 * [tmux](linux/tmux)
+* [Vi / Vim](linux/vi_vim)
