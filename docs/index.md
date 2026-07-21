@@ -42,6 +42,7 @@ Tech Tips and Guides - Dev Ops, Home Labbing, Sofware Development
   * [Delete Node from Proxmox Cluster](proxmox/delete_node_from_proxmox_cluster)
   * [How to Resize Proxmox local-lvm Disk](proxmox/how-to-resize-proxmox-local-lvm-disk)
   * [How to Resize Proxmox VM Disk Space](proxmox/how-to-resize-proxmox-vm-disk-space)
+  * [Mount Samba Share to Proxmox Container](proxmox/mount_samba_share_to_proxmox_ct.md)
   * [PCI Passthough - Intel GPU](proxmox/pci_passthrough_intel_gpu)
 ### Software Engineering
 * [Git](software-engineering/git/README)
