@@ -11,3 +11,7 @@
    * `g sudo`: add to `sudo` group 
    * `-s /usr/bin/bash`: assign bash shell
    * `r`: system user
+
+##### Copy to clipboard
+ie: 
+`cat ~/.ssh/id_ecdsa.pub | pbcopy`
