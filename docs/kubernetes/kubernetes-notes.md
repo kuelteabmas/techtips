@@ -56,6 +56,12 @@ Print out the service in question
 Describe ingressroute ingressroutes.traefik.containo.us
 `kubectl describe ingressroutes.traefik.containo.us`
 
+Show all node conditions (issues) including **PIDPressure, EtcdIsVoter, DiskPressure, MemoryPressure** among others
+`kubectl describe nodes | grep -A5 "Conditions:"`
+
+Describe pod and print only the first 5 lines of Events
+`kubectl describe pod POD_NAME -n default | grep -A5 "Events:"`
+
 ___
 
 ### Delete
