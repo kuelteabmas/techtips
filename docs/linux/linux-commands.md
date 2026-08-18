@@ -15,3 +15,6 @@
 ##### Copy to clipboard
 ie: 
 `cat ~/.ssh/id_ecdsa.pub | pbcopy`
+
+#### List Services
+systemctl list-units | grep -i service_name
