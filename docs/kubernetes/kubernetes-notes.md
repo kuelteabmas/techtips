@@ -35,6 +35,9 @@ List all secrets
 List all challenges (Let's Encrypt ACME Certificates)
 `kubectl get challenges`
 
+Watch new HelmRelease 
+`kubectl get helmrelease traefik -n traefik -w`
+
 
 ____
 
@@ -44,6 +47,8 @@ View logs continuously (tailing)
 `kubectl logs -n namespace_name -f pod_name`
 `kubectl logs -n cert-manager -f cert-manager-79497589cf-kk2mb`
 
+View logs of all pods continuously
+`kubectl logs -n traefik -l app.kubernetes.io/name=traefik -f --tail=0`
 ___
 
 ### Describe
