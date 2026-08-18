@@ -4,39 +4,40 @@
 Tech Tips and Guides - Dev Ops, Home Labbing, Sofware Development
 
 ### Apps
-* [JellyFin Notes](apps/jellyfin_notes)
-* [PiHole](apps/pihole.md)
+  * [JellyFin Notes](apps/jellyfin_notes)
+  * [PiHole](apps/pihole.md)
 ### Databases
-* [PostgreSQL](databases/postgresql)
+  * [PostgreSQL](databases/postgresql)
 ### Docker
-* [Docker Commands](docker/docker-commands)
+  * [Docker Commands](docker/docker-commands)
 ### IaC
-* Terraform
-  * [Terraform Notes](iac/terraform/terraform-notes)
-* Ansible
-  * [Ansible Notes](iac/ansible/ansible-notes)
-  * [Ansible Snippets](iac/ansible/ansible-snippets)
+  * Terraform
+    * [Terraform Notes](iac/terraform/terraform-notes)
+  * Ansible
+    * [Ansible Notes](iac/ansible/ansible-notes)
+    * [Ansible Snippets](iac/ansible/ansible-snippets)
 ### Hardware
-* Troubleshooting
-  * [p520](hardware/troubleshooting/p520)
+  * Troubleshooting
+    * [p520](hardware/troubleshooting/p520)
 ### Kubernetes
-* [Helm Commands](kubernetes/helm-commands)
-* [kubernetes Notes](kubernetes/kubernetes-notes)
+  * [Helm Commands](kubernetes/helm-commands)
+  * [kubernetes Notes](kubernetes/kubernetes-notes)
 ### Linux
-* [Linux Commands](linux/linux-commands)
-* [Linux Troubleshooting](linux/linux-troubleshooting)
-* [Mount Drive CIFS](linux/mount-drive-cifs)
-* [Setting Up pass utility](linux/pass_utility)
-* [Secure SSH Keygen](linux/secure-ssh-keygen)
-* [tmux](linux/tmux)
-* [Vi / Vim](linux/vi_vim)
+  * [Linux Commands](linux/linux-commands)
+  * [Linux Troubleshooting](linux/linux-troubleshooting)
+  * [Mount Drive CIFS](linux/mount-drive-cifs)
+  * [Setting Up pass utility](linux/pass_utility)
+  * [Secure SSH Keygen](linux/secure-ssh-keygen)
+  * [tmux](linux/tmux)
+  * [Vi / Vim](linux/vi_vim)
 ### Miscelleanous Notes
-* [Printer Notes](misc/printer-notes)
+  * [Printer Notes](misc/printer-notes)
 ### Networking
-* [Tools](networking/tools)
+  * [Tools](networking/tools)
 ### PFSense
-* [PFSsense/Wireguard Glinet Travel Router Notes](pfsense/pfsense-wireguard-glinet-travel-router)
-* [Unable to Retrieve Package Information](pfsense/unable-to-retrieve-package-information.md)
+  * [PFSsense/Wireguard Glinet Travel Router Notes](pfsense/pfsense-wireguard-glinet-travel-router)
+  * [Unable to Retrieve Package Information](pfsense/unable-to-retrieve-package-information.md)
+  * [Adding LAN and outside LAN Access DNS Resolver for Cluster wide hosted services via a Load Balancer](pfsense/pfsense_cloudflare_dns_resolver_k3s_loadbalancer.md)
 ### Proxmox
   * [Adding Second Drive in a Volume Group](proxmox/adding-second-drive-vg)
   * [Delete Node from Proxmox Cluster](proxmox/delete_node_from_proxmox_cluster)
