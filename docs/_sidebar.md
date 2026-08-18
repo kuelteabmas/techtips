@@ -15,6 +15,7 @@
   * Troubleshooting
     * [p520](hardware/troubleshooting/p520)
 * [Kubernetes](kubernetes/README)
+  * [FluxCD - GtiOps Notes](kubernetes/fluxcd_md)
   * [Helm Commands](kubernetes/helm-commands)
   * [kubernetes Notes](kubernetes/kubernetes-notes)
 * [Linux](linux/README)

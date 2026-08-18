@@ -20,6 +20,7 @@ Tech Tips and Guides - Dev Ops, Home Labbing, Sofware Development
   * Troubleshooting
     * [p520](hardware/troubleshooting/p520)
 ### Kubernetes
+  * [FluxCD - GtiOps Notes](kubernetes/fluxcd_md)
   * [Helm Commands](kubernetes/helm-commands)
   * [kubernetes Notes](kubernetes/kubernetes-notes)
 ### Linux
