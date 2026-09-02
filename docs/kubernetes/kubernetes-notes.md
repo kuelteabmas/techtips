@@ -44,11 +44,21 @@ ____
 ### Logs
 
 View logs continuously (tailing)
+
 `kubectl logs -n namespace_name -f pod_name`
+
 `kubectl logs -n cert-manager -f cert-manager-79497589cf-kk2mb`
 
+View logs of a container within a pod continuously
+
+`kubectl logs -n cert-manager -f cert-manager-79497589cf-kk2mb -c cert-manager-container`
+
 View logs of all pods continuously
+
 `kubectl logs -n traefik -l app.kubernetes.io/name=traefik -f --tail=0`
+
+
+
 ___
 
 ### Describe
